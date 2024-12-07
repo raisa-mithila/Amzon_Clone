@@ -1,0 +1,602 @@
+/*terminal:npm run dev*/
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #f39da1;
+    /*#f1745e;*/
+    color: white;
+    /*text*/
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    width: 74px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid #FE889F;
+}
+
+/*box2*/
+.add-first {
+    color: whitesmoke;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/*box3*/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(245, 241, 242);
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input {
+    width: 500px;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #333333;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #FFFFFF;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+/*box4*/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*box6*/
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85;
+    font-weight: 700;
+}
+
+.perfume_box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 60px auto;
+}
+
+.Addcart {
+    box-sizing: border-box;
+}
+
+
+
+/*panel*/
+.panel {
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    color: #333333;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals {
+    font-size: 0.9;
+    font-weight: 700;
+}
+
+/*hero section*/
+.hero-section {
+
+    background: url("./hero_image.jpg");
+    background-size: cover;
+    height: 557px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: white;
+    color: #002C3E;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: #007185;
+}
+
+
+.shop-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.box-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box-content p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/**footer**/
+.footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #FFB7C2;
+    color: #002C3E;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #002C3E;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #a89797;
+}
+
+.foot-panel3 {
+    background-color: #FFFFFF;
+    color: #002C3E;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    width: 74px;
+    display: flex;
+    margin-bottom: 10px;
+    /*background-size: cover;
+    height: 50px;
+    width: 100px;*/
+
+}
+
+.foot-panel4 {
+    background-color: #f39da1;
+    color: #002C3E;
+    border-top: 0.5px solid white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+
+}
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyright {
+    padding-top: 5px;
+}
+
+/* Modal Background */
+.signin-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Sign In Container */
+.signin-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signin-container h2 {
+    margin-bottom: 20px;
+    color: #F7444E;
+}
+
+.signin-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.signin-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.signin-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F7444E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signin-container button:hover {
+    background-color: #002C3E;
+}
+
+.signin-container .forgot-password {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.signin-container .forgot-password a {
+    color: #002C3E;
+    text-decoration: none;
+}
+
+.signin-container .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Style for Close Button in Modal */
+.close-modal {
+    background-color: #FFB7C2;
+    /* Soft pink color */
+    color: #000000;
+    /* Black text for contrast */
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal:hover {
+    background-color: #e89aa8;
+    /* Slightly darker pink for hover */
+}
+
+.close-modal:active {
+    background-color: #d48590;
+    /* Darker pink when clicked */
+    transform: scale(0.98);
+    /* Button press effect */
+}
+
+.close-modal:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #FFB7C2;
+    /* Pink focus outline */
+}
+
+.product-details-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.product-details-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.product-details-content img {
+    max-width: 100%;
+    max-height: 400px;
+    margin-bottom: 20px;
+}
+
+.product-details-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-details-content button:hover {
+    background-color: #005bb5;
+}
+
+.product-price {
+    margin: 20px auto;
+}
+
+/* Style for View Details Button */
+.view-details-btn {
+    background-color: #FFB7C2;
+    /* Soft pink color */
+    color: #000000;
+    /* Black text for contrast */
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.view-details-btn:hover {
+    background-color: #e89aa8;
+    /* Slightly darker pink for hover */
+}
+
+.view-details-btn:active {
+    background-color: #d48590;
+    /* Darker pink when clicked */
+    transform: scale(0.98);
+    /* Button press effect */
+}
+
+.view-details-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #FFB7C2;
+    /* Pink focus outline */
+}
+
+
+.hero-msg {
+    width: 30%;
+    height: 300px;
+    background-color: transparent;
+}
+
+#fadeTitleColor {
+    color: #F7444E;
+}
+
+.hero-title {
+    margin-bottom: 327px;
+    text-align: vertical;
+    margin: 20px;
+}
+
+.hero-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Trigger animation */
+}
+
+.hero-title p {
+    font-family: 'Playfair Display', serif;
+    ;
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Trigger animation */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+        /* Slightly slide in from above */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-250px);
+    }
+}
+
+
+/* ADD TO CART BUTTON CODE  */
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-details {
+    background-color: #007bff;
+    color: rgb(14, 14, 14);
+}
+
+.add-to-cart {
+    background-color: #d55378;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cart-modal-content {
+    color: #000000;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cart-items {
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cart-items p {
+    margin: 10px 0;
+}
